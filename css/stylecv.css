@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+body {
+  background-image: url("../img/blob-scene-haikei.svg");
+  background-size: cover;
+  background-position: center;
+}
+.header--container {
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  background: rgb(212, 139, 226);
+  text-align: center;
+}
+.header--container ul {
+  height: 30px;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding-top: 35px;
+}
+li {
+  margin-top: 50px;
+}
+
+li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 0.1875rem;
+  width: 0rem;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+li:hover:after {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.678);
+  
+}
+.header--link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.header--link:hover {
+  color: #ffffff;
+}
+
+.main--container {
+  margin-top: 10px;
+}
+.cv--container {
+  width: 50%;
+  height: 100vh;
+  background: #fffaff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.589);
+}
+.cv--header,
+.cv--aboutme,
+.cv--header--container,
+.cv--skills {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  min-width: 320px;
+}
+
+.cv--header--container {
+  padding-top: 20px;
+}
+.cv--header--img {
+  margin-left: 30px;
+  width: 25%;
+  background: url("../img/girl.png") no-repeat;
+  background-size: 72%;
+  background-position: center;
+}
+
+.cv--header--text {
+  padding-top: 10px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cv--header--name {
+  font-size: 5rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  color: rgba(2, 2, 2, 0.884);
+  padding: 10px 0;
+  line-height: 8rem;
+}
+.cv--header--sub {
+  font-size: 3rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 300 bold;
+  color: #935cfc;
+}
+.cv--aboutme {
+  margin-top: 20px;
+  min-width: 320px;
+  justify-content: center;
+}
+.cv--aboutme--img {
+  margin-left: 30px;
+  width: 25%;
+  background: url("../img/about-me_adobespark.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.cv--aboutme--text {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+}
+.cv--aboutme--p {
+  font-size: 1.2rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.cv--skills {
+  margin-top: 40px;
+}
+.cv--skills--img {
+  margin-left: 30px;
+  width: 25%;
+  background: url("../img/skills.png") no-repeat;
+  background-size: 85%;
+  background-position: center;
+}
+.cv--skills--icons {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills--icons--html {
+  background: url("../img/html.png") no-repeat;
+}
+.skills--icons--css {
+  background: url("../img/css3.png") no-repeat;
+}
+.skills--icons--python {
+  background: url("../img/python.png") no-repeat;
+}
+.skills--icons--git {
+  background: url("../img/git.png") no-repeat;
+}
+.skills--icons--js {
+  width: 33.3%;
+  background: url("../img/js.png") no-repeat;
+  background-size: 37%;
+  background-position: center;
+}
+.skills--icons--git {
+  width: 33.3%;
+  background: url("../img/git.png") no-repeat;
+  background-size: 48%;
+  background-position: center;
+}
+.skills--icons--b {
+  background: url("../img/bootstrap.png") no-repeat;
+}
+.skills--icons--html,
+.skills--icons--css,
+.skills--icons--python,
+.skills--icons--b {
+  width: 33.3%;
+  background-size: 39%;
+  background-position: center;
+}
+.skills--icons--git,
+.skills--icons--js,
+.skills--icons--b {
+  margin-top: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .cv--container {
+    width: 70%;
+    height: 100vh;
+  }
+  
+}
+@media screen and (max-width: 1085px) {
+  .skills--icons--js {
+    background-size: 36%;
+  }
+ 
+}
+
+@media screen and (max-width: 810px) {
+  .main--container {
+    margin: 0;
+  }
+  .cv--container {
+    width: 90%;
+    height: 100vh;
+  }
+  .cv--header--text {
+    padding: 0;
+  }
+  .cv--header--name {
+    padding: 0;
+  }
+  .skills--icons--git,
+  .skills--icons--js,
+  .skills--icons--b {
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 635px) {
+  html {
+    overflow: visible;
+  }
+  .cv--container {
+    width: 100%;
+    height: 100vh;
+    box-shadow: none;
+    background-color: #d75cfc77;
+  }
+  .cv--header--img,
+  .cv--aboutme--img,
+  .cv--skills--img {
+    margin-left: 15px;
+  }
+  .cv--header--img {
+    background-size: 90%;
+  }
+  .cv--header--text {
+    padding: 0;
+  }
+  .cv--header--name {
+    font-size: 3rem;
+  }
+  .cv--header--sub {
+    font-size: 1.5rem;
+  }
+  .cv--aboutme--p {
+    font-size: 1rem;
+  }
+  .skills--icons--git,
+  .skills--icons--js,
+  .skills--icons--b {
+    margin-top: 0;
+  }
+}
