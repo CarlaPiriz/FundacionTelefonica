@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="./css/stylemod3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header--nav">
+        <a class="nav--link" href="index.html">INICIO</a>
+        <a class="nav--link" href="cv.html">MODULO 2</a>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="ejercicio-1 box">
+        
+        <form name="form-1" action="" method="GET" onsubmit="nombres()">
+          <label for="">Ingrese un numero entre 3 y 10</label>
+          <input
+            class="customize"
+            type="number"
+            name="number"
+            id="num"
+            min="3"
+            max="10"
+            placeholder="3-10"
+            required
+          />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+      <section class="ejercicio-2 box">
+        
+        <form
+          name="form_2"
+          method="GET"
+          onsubmit="calcular()"
+          class="flex-start"
+        >
+          <label for="">Seleccione una opcion </label>
+          <label class="input-radio">
+            <input type="radio" name="number" id="par" value="par" required />
+            PAR
+            <i></i>
+          </label>
+          <label class="input-radio">
+            <input
+              type="radio"
+              name="number"
+              id="impar"
+              value="impar"
+              required
+            />IMPAR
+            <i></i>
+          </label>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+      <section class="ejercicio-3 box rs-pb">
+        
+        <form name="form_3" action="" method="GET" onsubmit="maths()">
+          <label for="lista">Elegir operación</label>
+
+          <select name="lista" id="lista" class="customize">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="x">Multiplicación</option>
+          </select>
+
+          <label for="numero1">Ingrese el primer numero</label>
+          <input
+            type="number"
+            id="numero1"
+            name="numero1"
+            min="0"
+            class="customize"
+            required
+          />
+          <label for="">Ingrese el segundo numero</label>
+          <input
+            type="number"
+            id="numero2"
+            name="numero2"
+            min="0"
+            class="customize"
+            required
+          />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <script src="./js/ejercicios.js"></script>
+  </body>
+</html>
